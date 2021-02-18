@@ -6,4 +6,4 @@
   - name: "Getting Rust Install Script"
     shell: "runuser -l rustserver -c 'wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh rustserver'"
   - name: "Setup ll command"
-    shell: "runuser -l rustserver -c 'echo \"alias ll='ls -l --color=auto'\" >> ~/.bashrc'"
+    shell: runuser -l rustserver -c 'echo "alias ll=\'ls -l --color=auto\'" >> ~/.bashrc'
