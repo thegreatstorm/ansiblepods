@@ -3,7 +3,7 @@
   tasks:
   - name: "Install RustServer"
     expect:
-      command: "runuser -l rustserver -c '~/.rustserver install'"
+      command: "runuser -l rustserver -c '~/./rustserver install'"
       responses:
         Continue? [Y/n] : ""
         Was the install successful? [Y/n] : ""
