@@ -4,7 +4,4 @@
   - name: "Creating a user: rustserver"
     shell: "adduser rustserver"
   - name: "Install Rust Script"
-    shell: "whoami"
-    become: true
-    become_user: rustserver
-    become_method: sudo
+    shell: "runuser -l rustserver -c 'wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh rustserver'"
