@@ -4,6 +4,6 @@
   - name: "Install RustServer"
     expect:
       command: "runuser -l rustserver -c '~/./rustserver install'"
-      ignore_errors: yes
       responses:
         (?i)[Y/n] : ""
+      timeout: -1
