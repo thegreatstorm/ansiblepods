@@ -5,7 +5,6 @@
     expect:
       command: "runuser -l rustserver -c '~/.rustserver install'"
       responses:
-        Question:
-          - Continue? [Y/n] : ""
-          - Was the install successful? [Y/n] : ""
-          - Allow anonymous usage statistics? [Y/n] : ""
+        Continue? [Y/n] : ""
+        Was the install successful? [Y/n] : ""
+        Allow anonymous usage statistics? [Y/n] : ""
