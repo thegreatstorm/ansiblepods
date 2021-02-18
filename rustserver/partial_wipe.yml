@@ -2,6 +2,6 @@
 - hosts: localhost
   tasks:
   - name: "Remove Map Files"
-    shell: "rm -rf {{app_dir}}/rustserver/server/{{identity}}/*.map"
+    shell: "rm -rf /opt/server/rustserver/server/rust_identity/*.map"
   - name: "Remove Sav Files"
-    shell: "rm -rf {{app_dir}}/rustserver/server/{{identity}}/*.sav*"
+    shell: "rm -rf /opt/server/rustserver/server/rust_identity/*.sav*"

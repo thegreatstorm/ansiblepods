@@ -4,14 +4,14 @@
   - name: "Download Oxide Installer"
     get_url:
       url: https://umod.org/games/rust/download/develop
-      dest: "{{app_dir}}/oxide_install.zip"
+      dest: "/opt/server/oxide_install.zip"
       mode: '0640'
   - name: "Unarchive Oxide Installer"
     unarchive:
-      src: "{{app_dir}}/oxide_install.zip"
-      dest: "{{app_dir}}/rustserver/"
+      src: "/opt/server/oxide_install.zip"
+      dest: "/opt/server/rustserver/"
       remote_src: yes
   - name: "Remove Oxide Installer"
     file:
-      path: "{{app_dir}}/oxide_install.zip"
+      path: "/opt/server/oxide_install.zip"
       state: absent
