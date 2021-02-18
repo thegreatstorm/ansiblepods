@@ -1,3 +1,10 @@
 ---
 - hosts: localhost
   tasks:
+  - name: "Install RustServer"
+    except:
+      shell: "runuser -l rustserver -c '~/.rustserver install'"
+      responses:
+        Continue? [Y/n] : ""
+        Was the install successful? [Y/n] : ""
+        Allow anonymous usage statistics? [Y/n] : ""

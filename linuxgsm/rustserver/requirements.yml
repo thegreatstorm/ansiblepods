@@ -19,4 +19,6 @@
         - libstdc++
         - libstdc++.i686
         - zlib-devel
+        - file
+        - nmap-ncat.x86_64
       state: latest
