@@ -6,5 +6,4 @@
       command: "runuser -l rustserver -c '~/./rustserver install'"
       responses:
         (?i)[Y/n] : ""
-        (?i)rustserver: ""
       timeout: -1
