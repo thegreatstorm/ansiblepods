@@ -2,4 +2,4 @@
 - hosts: localhost
   tasks:
   - name: "Start RustServer"
-    command: "runuser -l rustserver -c '~/./rustserver start'"
+    command: "/home/rustserver/./rustserver start"
