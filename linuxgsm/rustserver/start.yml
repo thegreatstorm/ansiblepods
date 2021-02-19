@@ -2,4 +2,4 @@
 - hosts: localhost
   tasks:
   - name: "Start RustServer"
-    command: "/home/rustserver/./rustserver start"
+    command: "sh /etc/./bashrc && /home/rustserver/./rustserver start"
