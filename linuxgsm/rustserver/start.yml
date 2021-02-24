@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+  - name: "Starting rust server"
+    shell: "source /etc/bashrc && ~/./rustserver start"
