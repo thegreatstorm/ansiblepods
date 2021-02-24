@@ -1,7 +1,0 @@
----
-- hosts: localhost
-  tasks:
-  - name: "Creating a user: rustserver"
-    shell: "adduser rustserver"
-  - name: "Getting Rust Install Script"
-    shell: "runuser -l rustserver -c 'wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh rustserver'"

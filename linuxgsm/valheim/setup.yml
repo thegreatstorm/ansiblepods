@@ -1,7 +1,0 @@
----
-- hosts: localhost
-  tasks:
-  - name: "Creating a user: vhserver"
-    shell: "adduser vhserver"
-  - name: "Getting Valheim Install Script"
-    shell: "runuser -l vhserver -c 'wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh vhserver'"

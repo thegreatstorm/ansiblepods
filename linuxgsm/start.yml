@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+  - name: "Start {{game_server}}"
+    command: "sh /etc/./bashrc && /home/{{game_server}}/./{{game_server}} start"
