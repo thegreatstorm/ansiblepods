@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   tasks:
-  - name: "Install RustServer"
+  - name: "Installing Valheim"
     expect:
       command: "runuser -l vhserver -c '~/./vhserver install'"
       responses:
