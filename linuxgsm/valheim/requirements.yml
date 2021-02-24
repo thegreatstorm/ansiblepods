@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+  tasks:
+  - name: "Install prerequisites."
+    yum:
+      name:
+        - curl
+        - wget
+        - tar
+        - bzip2
+        - gzip
+        - unzip
+        - python3
+        - binutils
+        - bc
+        - jq
+        - tmux
+        - glibc.i686
+        - libstdc++
+        - libstdc++.i686
+        - zlib-devel
+        - file
+        - nmap-ncat.x86_64
+      state: latest
