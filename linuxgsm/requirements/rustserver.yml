@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   tasks:
-  - name: "Install prerequisites."
+  - name: "Install prerequisites for {{game_server}}"
     yum:
       name:
         - curl
