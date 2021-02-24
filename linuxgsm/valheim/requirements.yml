@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   tasks:
-  - name: "Install prerequisites for {{game_server}}"
+  - name: "Install prerequisites Valheim Server"
     yum:
       name:
         - curl

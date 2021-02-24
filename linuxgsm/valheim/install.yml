@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+  - name: "Installing Valheim Server"
+    expect:
+      command: "runuser -l vhserver -c '~/./vhserver install'"
+      responses:
+        (?i)[Y/n] : ""
+      timeout: null
